@@ -1,0 +1,7 @@
+na frontu moram da dodam kako funkcionise loader, da se pojavi samo jedanput u danu, preko lokalstoridza.
+
+Srediti serializaciju preko backenda.. en sr za sad..
+
+postaviti sve bitinije stvari na home.blade.php i da smanjim broj stranica na sajtu. nisam siguran da je selected works najbolji nacin da pokazem projekte jer su slike ogromne a slike ce mi biti bukv samo skrinsotovi projekata. ovo mi ima vise smisla za neki sajt koji se bavi dizajnovima.. plus kada se budem zaopslio nzm kako cu bas ovo napraviti.. tkd najbolje da za sada stavim kao sve projekte koje imam kao komponentu na sajtu, a ovo selected works mogu da iskoristim za nesto drugo, videcu za sta...
+
+A kasnije kada se zaposlim mogu da napravim neki timeline kao kojic sto je napravio.. za sada

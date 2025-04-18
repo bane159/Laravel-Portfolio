@@ -1,0 +1,370 @@
+html {
+  scroll-behavior: smooth!important;
+}
+ #canvas-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10000000; 
+} 
+/* #content {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: -100; 
+
+    text-align: center;
+    width: 100%;
+   
+    height: 100vh;
+}  */
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    /* z-index: -100;  */
+
+    text-align: center;
+    width: 100%;
+   
+    height: 100vh;
+} 
+
+html, body {
+    height: 100%;
+    overflow-y: auto; /* Ensure vertical scrolling */
+}
+.z-100{
+    z-index: 10000000000000000000000000000000000000000000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee ul {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .marquee .item {
+    display: inline-block;
+    margin-right: 2rem; /* Adjust spacing between items */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Scrolls halfway through cloned set */
+    }
+  }
+  
+  /* Creates the infinite loop effect without HTML duplicates */
+  .marquee ul::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    visibility: hidden;
+  }
+.black{
+  color: black!important;
+}
+form *{
+  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
+  .btn-custom {
+    width: 40px!important;
+    height: 40px!important;
+    min-height: 40px!important;
+    max-height: 40px!important;
+    min-width: 40px!important;
+    max-width: 40px!important;
+    text-align: center!important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+     /* Adjust if needed */
+     /* Adjust if needed */
+    /* box-sizing: border-box; */
+}
+.page-item{
+  text-align: center!important;
+}
+.text-big{
+  font-size: 15px !important;
+}
+.row{
+  justify-content: center!important;
+}
+.active-br{
+  text-align: center!important;
+  background-color: rgba(255, 255, 255, 0.712)!important;
+}
+.br-btn{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white-color);
+  line-height: 1;
+  text-align: center;
+  padding: 1.2rem 2rem;
+  background-color: var(--primary-t-color);
+  border-color: var(--primary-t-color);
+  border-radius: 100px;
+  outline: 0 none;
+  cursor: pointer;
+  z-index: 1;
+  transition: all var(--transition-function) var(--transition-duration);
+}
+
+
+
+
+.section{
+  padding: 70px 0!important;
+}
+
+
+
+
+
+
+/* 1. Base item centering */
+.item-added {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 0 10px; /* Add breathing room */
+  height: 575px;
+}
+
+/* 2. Fix for 990-1230px overlap */
+@media (min-width: 990px) and (max-width: 1230px) {
+  .row.filter-items {
+      --bs-gutter-x: 15px; /* Control column spacing */
+      justify-content: center;
+  }
+  
+ 
+  
+  .portfolio-item {
+      width: 100%;
+      max-width: 380px; /* Slightly smaller for this range */
+  }
+}
+
+/* 3. Tablet view adjustments */
+@media (max-width: 842px) and (min-width: 768px) {
+  
+}
+
+/* 4. Mobile centering (unchanged) */
+@media (max-width: 767px) {
+  .item {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+
+/* 1. Base image container styling */
+.portfolio-item .image-holder {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin: 0 auto; /* Center on mobile */
+}
+
+/* 2. Image styling */
+.portfolio-item .card-thumb img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  object-position: center;
+  display: block;
+}
+.card-content{
+  height: 2250px!important;
+}
+.card-thumb{
+  height: 600px!important;
+}
+/* 3. Grid layout for desktop */
+@media (min-width: 992px) {
+  .portfolio-item {
+      max-width: 400px;
+  }
+}
+
+/* 4. Mobile responsiveness */
+@media (max-width: 991px) {
+ 
+  
+  .portfolio-item {
+      /* width: 50%; */
+      max-width: 400px;
+  }
+  
+  
+}
+
+/* 5. Prevent card stretching */
+.card.portfolio-item {
+  height: auto !important;
+  flex-shrink: 0; /* Prevent squeezing */
+}
+
+/* 6. Fix Bootstrap column behavior */
+
+
+/* 7. Optional hover effect */
+.portfolio-item .card-thumb:hover img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+
+.contact-form{
+  background-color: rgba(201, 201, 201, 0.904)!important;
+  color: black;
+}
+.h-100p{
+  height: 100px;
+}
+
+
+
+
+
+
+.animated-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 40px;
+  margin: 15px 0;
+  user-select: none;
+}
+
+.animated-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.label-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+}
+
+/* Background fill animation */
+.animated-checkbox input:checked ~ .checkmark {
+  background: linear-gradient(90deg, #4CAF50 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: fillBackground 0.3s ease forwards;
+  border-color: #4CAF50;
+}
+
+/* Checkmark animation */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.animated-checkbox input:checked ~ .checkmark:after {
+  display: block;
+  animation: checkStroke 0.3s ease;
+}
+
+@keyframes fillBackground {
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left bottom;
+  }
+}
+
+@keyframes checkStroke {
+  0% {
+    transform: rotate(45deg) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+  }
+}
+.terms{
+  margin: 0!important;
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all 0.4s ease-out 0s;
+}
+.heading p{
+  color: rgb(182, 182, 182) !important;
+}
+#project-meta div{
+  margin: 0 10px!important;
+}
